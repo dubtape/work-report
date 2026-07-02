@@ -1,0 +1,4 @@
+report-config.local.json
+*.local.json
+*.log
+node_modules/

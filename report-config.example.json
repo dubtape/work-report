@@ -1,0 +1,73 @@
+{
+  "targetUrl": "https://example.internal/work-report/main",
+  "opencliSession": "test",
+  "defaults": {
+    "hours": 8,
+    "content": "Work item follow-up"
+  },
+  "frameIds": {
+    "home": "HOME_IFRAME_ID",
+    "worklog": "WORKLOG_IFRAME_ID"
+  },
+  "selectors": {
+    "worklogMenuId": "WORKLOG_MENU_ID",
+    "newButtonId": "NEW_BUTTON_DOM_ID",
+    "formRootId": "FORM_ROOT_ID",
+    "dateInputId": "WORK_DATE_INPUT_ID",
+    "hiddenDateInputId": "WORK_DATE_HIDDEN_INPUT_ID",
+    "hoursInputId": "WORK_HOURS_INPUT_ID",
+    "contentInputId": "WORK_CONTENT_TEXTAREA_ID",
+    "managerInputId": "MANAGER_TEXT_INPUT_ID",
+    "saveAndCloseText": "Save and Close"
+  },
+  "lookups": {
+    "project": {
+      "controlId": "PROJECT_LOOKUP_ID",
+      "value": "PROJECT_VALUE_OR_CODE",
+      "text": "Project display name"
+    },
+    "customer": {
+      "controlId": "CUSTOMER_LOOKUP_ID",
+      "value": "CUSTOMER_VALUE_OR_ID",
+      "text": "Customer display name"
+    },
+    "stage": {
+      "controlId": "STAGE_LOOKUP_ID",
+      "value": "STAGE_VALUE_OR_ID",
+      "text": "Stage display name"
+    },
+    "category": {
+      "controlId": "CATEGORY_LOOKUP_ID",
+      "value": "CATEGORY_VALUE_OR_ID",
+      "text": "Category display name"
+    },
+    "product": {
+      "controlId": "PRODUCT_LOOKUP_ID",
+      "value": "PRODUCT_VALUE_OR_ID",
+      "text": "Product display name"
+    }
+  },
+  "model": {
+    "managerName": "Manager display name",
+    "fields": {
+      "Project": "PROJECT_MODEL_ID",
+      "Project_Code": "PROJECT_CODE",
+      "Project_Name": "Project display name",
+      "Customer": "CUSTOMER_MODEL_ID",
+      "Customer_Name": "Customer display name",
+      "ProjectStageRecord": "PROJECT_STAGE_RECORD_ID",
+      "ProjectStage": "PROJECT_STAGE_ID",
+      "ProjectStage_Name": "Stage display name",
+      "ProjectStageRecord_Owner": "PROJECT_STAGE_OWNER_ID",
+      "ProjectStage_Owner_Name": "Project stage owner name",
+      "Category": "CATEGORY_MODEL_ID",
+      "Category_Code": "CATEGORY_CODE",
+      "Category_Name": "Category display name",
+      "Product": "PRODUCT_MODEL_ID",
+      "Product_Name": "Product display name"
+    }
+  },
+  "verification": {
+    "recordCountSelector": ".pagination-info"
+  }
+}
